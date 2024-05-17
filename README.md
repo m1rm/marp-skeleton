@@ -25,5 +25,9 @@ In the `src` folder you need to have subfolders. Each subfolder holds **one** `i
 
 4. Build the empty example.pdf: `just build`
 
+## Assets
+Assets are placed in the subfolders next to the index.md.
+pngs and jpegs can be optimized using `just optimize`.
+
 ## Special Thanks
 [Pierre Schmitz](https://github.com/pierres)
