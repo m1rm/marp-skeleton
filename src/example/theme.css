@@ -1,0 +1,6 @@
+@import 'default';
+
+section {
+  /* Override default background */
+  background: rgb(79, 161, 243);
+}

@@ -29,5 +29,9 @@ In the `src` folder you need to have subfolders. Each subfolder holds **one** `i
 Assets are placed in the subfolders next to the index.md.
 pngs and jpegs can be optimized using `just optimize`.
 
+## Custom Styling
+Place a `theme.css` next to the `index.md` and write your custom
+css
+
 ## Special Thanks
 [Pierre Schmitz](https://github.com/pierres)

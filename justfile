@@ -44,9 +44,18 @@ build *args:
         return 1
     end
 
+    set -l themeConfig
+    if test -f theme.css
+        set themeConfig --theme "{{ invocation_directory() }}/theme.css"
+        echo $themeConfig
+    else
+        echo 'no custom theme found, using default theme'
+    end
+
     set -l name (path basename "{{ invocation_directory() }}")
 
     pnpm run --silent marp \
+        $themeConfig \
         --pdf \
         --allow-local-files \
         --html \
