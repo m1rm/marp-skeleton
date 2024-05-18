@@ -1,5 +1,5 @@
 {
-  "name": "slides",
+  "name": "marp-skeleton",
   "scripts": {
     "marp": "marp"
   },
