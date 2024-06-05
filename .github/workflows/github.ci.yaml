@@ -1,0 +1,30 @@
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - README.md
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: Install just
+        uses: extractions/setup-just@v1
+      - name: Install Fish Shell
+        run: sudo apt-add-repository ppa:fish-shell/release-3;sudo apt install fish
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+      - name: Install project dependencies
+        run: just install
+      - name: build all PDFs
+        run: just build-all
+      - name: Commit Artifacts
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Build all PDFs
