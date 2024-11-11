@@ -4,7 +4,7 @@
     "marp": "marp"
   },
   "dependencies": {
-    "@marp-team/marp-cli": "^4.0.0"
+    "@marp-team/marp-cli": "^4.0.3"
   },
   "engines": {
     "node": ">=22"
