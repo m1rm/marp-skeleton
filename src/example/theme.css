@@ -16,27 +16,31 @@ img[alt~="align-right"] {
   margin: 0 auto;
 }
 
+img[alt~="align-left"] {
+  float: left;
+  margin: 0 auto;
+}
+
 /* use on containing element to display images side by side */
 .inline-images {
   display: flex;
-  height: 80%;
-  justify-content: space-between;
+  height: 80%; /* control location on y-axis */
+  justify-content: space-evenly;
   align-items: center;
-  gap: 10px;
 }
 
-img[alt~="align-bottom"] {
+img[alt~="align-bottom-centered"] {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  margin: 0;
+  margin: 0; /* control margin to end of slide */
 }
 
-img[alt~="align-top"] {
+img[alt~="align-top-centered"] {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  margin: 0;
+  margin: 0;  /* control margin to end of slide */
 }
