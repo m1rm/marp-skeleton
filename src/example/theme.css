@@ -1,14 +1,9 @@
 /* @theme mmexample */
 
 section {
-  width: 1280px;
-  height: 720px;
   font-size: 36px;
-  padding: 40px;
   background: rgb(79, 161, 243);
   color: #212018;
-  font-family: Signika,"DejaVu Sans",Arial,Helvetica,sans-serif;
-  position: relative;
 }
 
 img[alt~="align-right"] {
