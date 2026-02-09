@@ -1,4 +1,6 @@
+.idea
 /.vscode
+.DS_STORE
 /dist/*
 !/dist/.gitkeep
 /node_modules
