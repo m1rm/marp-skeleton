@@ -1,6 +1,3 @@
-> [!IMPORTANT]
-> The work on this project is continued at: https://codeberg.org/m1rm/marp-skeleton
-
 # Presentations
 This repo holds a simple setup to create presentations
 using [Marp](https://marp.app/).
