@@ -25,6 +25,6 @@ jobs:
       - name: build all PDFs
         run: just build-all
       - name: Commit Artifacts
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: Build all PDFs
