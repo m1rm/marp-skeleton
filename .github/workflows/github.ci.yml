@@ -11,7 +11,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
       - name: Install just
-        uses: extractions/setup-just@v2
+        uses: extractions/setup-just@v3
       - name: Install Fish Shell
         run: sudo apt-add-repository ppa:fish-shell/release-3;sudo apt install fish
       - name: Setup Node
