@@ -15,7 +15,7 @@ jobs:
       - name: Install Fish Shell
         run: sudo apt-add-repository ppa:fish-shell/release-3;sudo apt install fish
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: '22'
       - name: Install pnpm
