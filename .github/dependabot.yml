@@ -3,8 +3,21 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
+    groups:
+      dependabot-patch:
+        applies-to: version-updates
+        update-types:
+          - "patch"
+      dependabot-minor:
+        applies-to: version-updates
+        update-types:
+          - "minor"
+      dependabot-major:
+        applies-to: version-updates
+        update-types:
+          - "major"
